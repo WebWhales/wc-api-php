@@ -441,4 +441,14 @@ class HttpClient
     {
         return $this->response;
     }
+
+    /**
+     * Get the cURL handle.
+     *
+     * @return resource
+     */
+    public function getCurl()
+    {
+        return $this->ch;
+    }
 }
